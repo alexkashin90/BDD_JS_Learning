@@ -3,12 +3,12 @@ const DoctorsPage = require("./doctors.page");
 
 
 /**
- * @param {'dasboard' | 'doctors'} name 
+ * @param {'dashboard' | 'doctors'} name 
  * @returns {DashboardPage | DoctorsPage} 
  */
 function pages(name) {
     const items = {
-        dasboard: new DashboardPage(),
+        dashboard: new DashboardPage(),
         doctors: new DoctorsPage(),
     }
     return items[name.toLowerCase()];
